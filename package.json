@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot-framework",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/RisGar/discord-bot-framework.git",
+  "author": "Rishab Garg <rishgarg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js"
+  }
+}

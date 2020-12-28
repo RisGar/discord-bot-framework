@@ -1,0 +1,16 @@
+# Config
+.env
+config.ts
+
+# Typscript
+dist
+
+# Linters and Formatters
+*rc.*
+.prettierignore
+
+# Info
+*.info.md
+
+# Node modules
+node_modules
