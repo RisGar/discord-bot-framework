@@ -7,6 +7,12 @@ export const setClient = (_client: BotClient) => {
 }
 
 export const getPermLevel = (user: User | GuildMember): number => {
-    if (client.config.owners.includes(user.id)) return 5
-    else return 0
+    let perm = 0
+    for (let i = 5; i--; i >= 1) {
+        if (client.config.perms[i].includes(user.id)) {
+            perm = i
+            break
+        }
+    }
+    return perm
 }

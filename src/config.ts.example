@@ -1,0 +1,10 @@
+// Perms
+export const perms = {
+    5: ['yourid'], // Owner
+    4: [], // Admins
+    3: [], // Mods
+    2: [], // Staff
+    1: [], // Helpers
+}
+
+export const prefix: string = '.'
